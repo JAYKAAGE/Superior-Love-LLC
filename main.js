@@ -205,6 +205,7 @@ const observer = new IntersectionObserver((entries) => {
   '.care-tile',
   '.amenities-inner',
   '.gallery-item',
+  '.amenities-panel',
   '#promise .promise-inner',
   '.testimonial-card',
   '.team-card',
