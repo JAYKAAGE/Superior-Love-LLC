@@ -1,0 +1,259 @@
+/* ===========================
+   Superior Love Donation Page
+=========================== */
+
+:root{
+    --black:#0d0d0d;
+    --charcoal:#1b1b1b;
+    --gold:#d4af37;
+    --gold-light:#f3d97a;
+    --green:#2e8b57;
+    --green-light:#4CAF70;
+    --white:#ffffff;
+    --gray:#d5d5d5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero-donate{
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.82)
+        ),
+        url("images/hero-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero-donate h1{
+
+    font-size:clamp(2.8rem,6vw,4.5rem);
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+}
+
+.hero-donate p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+    font-size:1.1rem;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-donate{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:var(--gold);
+
+    color:var(--black);
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    border:2px solid var(--gold);
+}
+
+.btn-donate:hover{
+
+    background:var(--green);
+
+    border-color:var(--green);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   Donation Section
+=========================== */
+
+.donation-section{
+
+    padding:90px 20px;
+
+    text-align:center;
+}
+
+.donation-section h2{
+
+    color:var(--gold);
+
+    font-size:2.7rem;
+
+    margin-bottom:15px;
+}
+
+.donation-section>p{
+
+    color:var(--gray);
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    line-height:1.8;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.donation-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    gap:35px;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
+.donation-card{
+
+    background:var(--charcoal);
+
+    border:2px solid var(--gold);
+
+    border-radius:18px;
+
+    padding:40px 30px;
+
+    transition:.35s;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.45);
+}
+
+.donation-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--green);
+
+    box-shadow:
+        0 20px 40px rgba(46,139,87,.35);
+}
+
+.donation-card img{
+
+    width:75px;
+
+    height:75px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+}
+
+.donation-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+    font-size:1.7rem;
+}
+
+.donation-card p{
+
+    color:var(--gray);
+
+    margin-bottom:25px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    border-top:1px solid rgba(212,175,55,.3);
+
+    padding:30px;
+
+    text-align:center;
+
+    color:var(--gray);
+
+    background:#090909;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+.hero-donate{
+
+    min-height:60vh;
+
+    padding:60px 25px;
+}
+
+.donation-section{
+
+    padding:70px 20px;
+}
+
+.donation-card{
+
+    padding:35px 25px;
+}
+
+}
