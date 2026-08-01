@@ -203,16 +203,17 @@ body{
 }
 
 .donation-card img{
+    width:100%;
 
-    width:75px;
-
-    display: block;
-
-    margin: 0 auto;
-
-    max-width: 150px; /* adjust to whatever size looks right */
+    max-width:150px;
     
-    height: auto;
+    height:75px;         /* same height for every logo */
+
+    object-fit:contain;  /* keeps aspect ratio, centers within the box */
+
+    display:block;
+    
+    margin:0 auto;
 }
 
 .donation-card h3{
