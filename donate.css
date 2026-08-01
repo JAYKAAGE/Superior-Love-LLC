@@ -206,11 +206,13 @@ body{
 
     width:75px;
 
-    height:75px;
+    display: block;
 
-    object-fit:contain;
+    margin: 0 auto;
 
-    margin-bottom:20px;
+    max-width: 150px; /* adjust to whatever size looks right */
+    
+    height: auto;
 }
 
 .donation-card h3{
